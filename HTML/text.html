@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="..\JS\text.js"></script> -->
+    <script src="..\JS\text2.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+
+        a:hover{
+            color:yellow;
+        }
+        a:active{
+            color: rgb(0, 255, 38);
+        }
+        a:blank {
+            color: red;
+        }
+        input:focus {
+            color: blue;
+        }
+        p:last-child {
+            color: red;
+        }
+        p {
+            text-align: center;
+            border: 5px solid blue;
+            width: 100px;
+            margin: 15px;
+        }
+        .one {
+            position: relative;
+            top: 10px;
+            left: 40px;
+            background-color: #fff;
+            color: #000;
+        }
+        .two {
+            position:absolute;
+            top: 10px;
+            left: 40px;
+            background-color: #fff;
+            color: #000;
+        }
+        .three {
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <a href="shengeyan.gitee.io" >伪类标签</a>
+    <br>
+    <input type="text">
+    <p>这是一个段落</p>
+
+    <p>第一</p>
+    <p class="two">第二</p>
+    <p class="three">第三</p>
+
+    <!-- -------------------------------------- -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <div id="app">
+        <button @click="count++">
+          Count is: {{ count }}
+        </button>
+      </div>
+
+    <script>
+
+        createApp({
+          data() {
+            return {
+              count: 0
+            }
+          }
+        }).mount('#app')
+
+    </script>
+</body>
+</html>
